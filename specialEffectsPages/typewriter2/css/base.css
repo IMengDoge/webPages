@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 楷体;
+}
+
+div {
+	display: flex;
+	background-color: #123def;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+h1 {
+	color: #FFF;
+	font: 36px;
+	font-weight: 400;
+}
+
+span.cur {
+	border-right: 2px solid #FFF;
+	animation: flash 0.7s step-end infinite;
+}
+
+@keyframes flash {
+
+	0%,
+	100% {
+		border-right-color: transparent;
+	}
+
+	50% {
+		border-right-color: #FFF;
+	}
+}

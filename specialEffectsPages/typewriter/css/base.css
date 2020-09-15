@@ -1,0 +1,44 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	color: #FFF;
+	font-family: "comic sans ms";
+}
+
+.line {
+	width: 1100px;
+	border-right: 2px solid #FFF;
+	font-size: 32px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.animate {
+	animation: grow 6s steps(71) 1s normal both;
+	animation: flash 500ms setps(71) 500ms infinite normal;
+}
+
+@keyframes flash {
+	from {
+		border-right-color: #FFFFFF;
+	}
+
+	to {
+		border-right-color: transparent;
+	}
+}
+
+@keyframes grow {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 1100px;
+	}
+}
