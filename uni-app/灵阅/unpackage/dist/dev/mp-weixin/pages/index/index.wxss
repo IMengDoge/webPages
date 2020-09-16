@@ -1,0 +1,313 @@
+
+.card {
+	width: 640rpx;
+	margin: 20rpx auto;
+	/* min-height: 52rpx; */
+	font-size: 32rpx;
+	line-height: 32rpx;
+	padding: 20rpx;
+	border-radius: 16px;
+	/* background-color: #007AFF; */
+}
+.msg {
+	font-size: 32rpx;
+	padding: 20rpx;
+	color: #FFFFFF;
+}
+.publisher {
+	text-align: right;
+	font-size: 28rpx;
+	padding: 20rpx;
+	background-repeat: no-repeat;
+	/* background-position: 20rpx 20rpx; */
+	background-size: 68rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sqrSoul */
+.s01 {
+	background-color: #A268D4;
+}
+.s02 {
+	background-color: #FA5E8A;
+}
+.s03 {
+	background-color: #58C4CC;
+}
+.s04 {
+	background-color: #7E8FEF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sql */
+
