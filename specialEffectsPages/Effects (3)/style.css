@@ -1,0 +1,75 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 750px;
+	background-color: #000000;
+	font-family: "comic sans ms";
+}
+h1{
+	color: #000000;
+	font-size: 8em;
+	margin: 0px;
+	padding: 0px;
+}
+h1 span{
+	display: table-cell;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	animation: animte 5.5s linear infinite;
+}
+h1 span:nth-child(1){
+	animation-delay: 0s;
+}
+h1 span:nth-child(2){
+	animation-delay: 0.5s;
+}
+h1 span:nth-child(3){
+	animation-delay: 1s;
+}
+h1 span:nth-child(4){
+	animation-delay: 1.5s;
+}
+h1 span:nth-child(5){
+	animation-delay: 2s;
+}
+h1 span:nth-child(6){
+	animation-delay: 2.5s;
+}
+h1 span:nth-child(7){
+	animation-delay: 3s;
+}
+h1 span:nth-child(8){
+	animation-delay: 3.5s;
+}
+h1 span:nth-child(9){
+	animation-delay: 4s;
+}
+h1 span:nth-child(10){
+	animation-delay: 4.5s;
+}
+h1 span:nth-child(11){
+	animation-delay: 5s;
+}
+@keyframes animte{
+	0%,100%{
+		color: #f0f0f0;
+		filter: blur(3px);
+		text-shadow: 0px 0px 10px #00aaff,
+					 0px 0px 20px #00aaff,
+					 0px 0px 40px #00aaff,
+					 0px 0px 80px #00aaff,
+					 0px 0px 130px #00aaff,
+					 0px 0px 200px #00aaff,
+					 0px 0px 300px #00aaff,
+					 0px 0px 400px #00aaff;
+	}
+	5%,95%{
+		color: #000000;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}

@@ -1,0 +1,45 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css")
+
+
+*{
+	/* font-family: "microsoft yahei"; */
+}
+body{
+	min-height: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.rel{
+	font-size: 8em;
+	position: relative;
+	color: #00AAFF;
+	background-color: #FFFFFF;
+	letter-spacing: 0.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+span{
+	color: #E3E3E3;
+	mix-blend-mode: lighten;
+}
+.rel::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 170px;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #2C2F37;
+	animation: rel 6s linear infinite;
+}
+@keyframes rel{
+	0%,100%{
+		left: -40px;
+	}
+	50%{
+		left: calc(100% - 100px);
+	}
+}

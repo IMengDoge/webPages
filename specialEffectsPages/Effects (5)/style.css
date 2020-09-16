@@ -1,0 +1,38 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "comic sans ms";
+}
+
+body {
+	background-color: #00AAFF;
+
+}
+
+.mid {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.txt {
+	color: #FFFFFF;
+	font-size: 8em;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.hidd {
+	opacity: 1;
+	max-width: 8em;
+	transition: 1s ease-in;
+}
+
+.txt:hover .hidd {
+	max-width: 0px;
+	opacity: 0;
+	transition: 1s ease-in-out;
+}

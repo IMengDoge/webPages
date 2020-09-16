@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "comic sans ms";
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 650px;
+	background-color: #000000;
+}
+h2{
+	position: relative;
+	margin: 0px;
+	font-size: 6em;
+	color: #FFFFFF;
+	font-weight: bold;
+	z-index: 1;
+	overflow: hidden;
+}
+h2::before{
+	content: '';
+	position: absolute;
+	left: 120%;
+	width: 120%;
+	height: 120%;
+	/* background: linear-gradient(); */
+	background: -webkit-linear-gradient(90deg,transparent 0%, #000000 5%,#000000 100%);
+	animation: animte 5s linear forwards;
+}
+@keyframes animte{
+	0%{
+		left: 110%;
+	}
+	100%{
+		left: -15%;
+	}
+}
+h2 span{
+	color: #994854;
+}

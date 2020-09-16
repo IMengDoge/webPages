@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="qrcode.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			*{
+				user-select: none;
+			}
+			.main{
+				width: 280px;
+				height: 400px;
+				box-shadow: 0px 0px 1px 1px #bebebe;
+				/* border: 1px solid #282C35; */
+				margin: 100px auto;
+				border-radius: 2px;
+				background-color: #F5F5F5;
+			}
+			.titBar{
+				width: 100%;
+				height: 32px; 				/* 16+8+8 */
+			}
+			.titBar .logo{
+				width: 32px;
+				height: 16px;
+				line-height: 16px;
+				font-size: 14px;
+				padding-top: 8px;
+				margin-left: 10px;
+				color: #A7A6AA;
+				font-family: "microsoft yahei";
+				float: left;
+			}
+			.titBar .close{
+				width: 34px;
+				height: 26px;
+				background-image: url(exit.png);
+				background-size: 10px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				border-radius: 2px 0px 0px 0px;
+				float: right;
+			}
+			.titBar .close:hover{
+				background-color: #FA5151;
+			}
+			
+			.titBar .settings{
+				width: 34px;
+				height: 26px;
+				background-image: url(settings.png);
+				background-size: 10px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				float: right;
+			}
+			.titBar .settings:hover{
+				background-color: #E3E3E3;
+			}
+			.qrcode{
+				width: 184px;			/* 280-48-48 */
+				height: 184px;
+				margin: 49px auto;
+				background-image: url(qrcode.png);
+				background-repeat: no-repeat;
+				background-size: 100%;
+				/* background-color: #00AAFF; */
+			}
+			.tick{
+				font-size: 13px;
+				width: 156px;
+				height: 13px;
+				margin: 3px auto;
+				color: #878787;
+				font-family: "microsoft yahei";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main" onmousedown="down()" onmouseup="up()">
+			<div class="titBar">
+				<div class="close" onclick="exit()"></div>
+				<div class="settings"></div>
+				<div class="logo">微信</div>
+			</div>
+			<div class="qrcode"></div>
+			<div class="tick">请使用吕玉申骚一骚以登录</div>
+		</div>
+		<script type="text/javascript">
+			function exit(){
+				var p = document.getElementsByClassName('main')[0];
+				p.parentNode.removeChild(p);
+			}
+			
+			var isDown = false;
+			
+			function down(){
+				isDown = true;
+				document.getElementsByClassName('main')[0].style.cursor = "move";
+			}
+			function up(){
+				isDown = false;
+				document.getElementsByClassName('main')[0].style.cursor = "default";
+			}
+			window.onmousemove=function(e){
+				if(isDown){
+					var x = e.clientX;
+					var y = e.clientY;
+					var elem = document.getElementsByClassName('main')[0];
+					elem.style.marginLeft = x-30+"px";
+					elem.style.marginTop = y-30+"px";
+				}else{
+					return;
+				}
+			}
+		</script>
+	</body>
+</html>
